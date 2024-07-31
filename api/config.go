@@ -9,7 +9,7 @@ import (
 
 func envACCOUNTSID() string {
 	println(godotenv.Unmarshal(".env"))
-	err := godotenv.Load("./env")
+	err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatalln(err)
 		log.Fatal("error loading .env file")
